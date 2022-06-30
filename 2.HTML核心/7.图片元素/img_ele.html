@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png">
+  <img src="./img/baidu.png" alt="这是一张百度图片">
+  <img src="./img/baidu2.png" alt="这是一张百度图片">
+
+  <figure>
+    <a href="https://www.baidu.com" target="_blank">
+      <img usemap="#baiduMap" src="./img/baidu.png" alt="这是一张百度图片">
+    </a>
+    <figcaption>
+      <h2>太阳系</h2>
+    </figcaption>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic iusto ut quia aperiam, earum culpa quibusdam quos quam molestias, neque cupiditate iure repellendus, reprehenderit nulla quaerat adipisci animi aspernatur quasi.</p>  
+  </figure>
+  <map name="baiduMap">
+    <!-- coords坐标属性, 坐标系原点在图片左上角, 向右x递增,向下y递增 -->
+    <!-- 圆形, coords属性为(横坐标,纵坐标,半径) -->
+    <!-- 矩形, coords属性为左上角坐标,右下角坐标 -->
+    <!-- 多边形, 多个点坐标, 几个点对应几边形 -->
+    <area shape="circle" coords="540, 258, 100" href="https://image.baidu.com/" alt="" target="_blank">
+    <area shape="rect" coords="0, 158, 100, 258" href="https://zhidao.baidu.com/" alt="" target="_blank">
+    <area shape="poly" coords="" href="" target="_blank">
+  </map>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* * {
+  color: red;
+} */
+
+/* 选中所有具有href属性的元素 */
+/* [href] {
+  color: red;
+} */
+
+/* 选中所有具有href属性&&href="https://www.sina.com" 的元素 */
+/* [href="https://www.sina.com"] {
+  color: red;
+} */
+
+/* [href="https://www.baidu.com"] {
+  color: #008c8c;
+} */
+
+/* 选中属性带特定值,且有空格分隔的元素 */
+[class~="b"] {
+  color: green;
+}
+
+a:link {
+  color: chocolate;
+}
+
+a:visited {
+  color: bisque;
+}
+
+/* 选中鼠标悬停时的a元素 */
+a:hover {
+  color: red;
+}
+
+/* 鼠标按下时的a元素 */
+a:active {
+  color: blue;
+}
+
