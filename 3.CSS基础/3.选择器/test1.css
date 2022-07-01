@@ -17,25 +17,52 @@
 } */
 
 /* 选中属性带特定值,且有空格分隔的元素 */
-[class~="b"] {
+/* [class~="b"] {
   color: green;
-}
+} */
 
-a:link {
+/* [class*="b"] {
+  color: #8c8c8c;
+} */
+
+/* href属性的值以baidu.com结尾 */
+/* [href$="baidu.com"] {
+  color: #008c8c;
+} */
+
+/* a:link {
   color: chocolate;
-}
+} */
 
-a:visited {
+/* a:visited {
   color: bisque;
-}
+} */
 
 /* 选中鼠标悬停时的a元素 */
-a:hover {
+/* a:hover {
   color: red;
-}
+} */
 
 /* 鼠标按下时的a元素 */
-a:active {
+/* a:active {
   color: blue;
+} */
+
+span::before {
+  content: "日文名:《";
+  color: blue
+}
+
+span::after {
+  content: "》";
+  color: blue
+}
+
+p {
+  text-indent: 2em;
+  line-height: 2;
+}
+p.red {
+  color: red;
 }
 
