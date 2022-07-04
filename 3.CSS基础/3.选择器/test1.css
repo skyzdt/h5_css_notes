@@ -66,3 +66,46 @@ p.red {
   color: red;
 }
 
+.red li {
+  color: #008c8c;
+}
+
+/* 选中使用abc作为class的元素下的所有后代元素 */
+/* .abc * {
+  color: aqua;
+} */
+
+/* 选中使用abc作为class的元素下应用bcd样式的直接子元素,不包括子元素的子元素 */
+/* .abc>.bcd {
+  color: black;
+} */
+
+/* div>ul li{
+  color: red;
+} */
+
+.special {
+  color: red;
+}
+
+/* 选中class为special的元素后面出现的一个兄弟元素 */
+  /* .special+li {
+    color:#008c8c;
+  } */
+
+/* 选中Class为special的元素的后边的所有兄弟元素 */
+/* .special~li{
+  color: bisque;
+} */
+
+/* 本质上等同书写了2次样式, 如下
+.special~li{
+  color: bisque;
+}
+.p{
+  color: bisque;
+}
+*/
+.special~li, p{
+  color: bisque;
+}
