@@ -7,16 +7,29 @@
   <title>Document</title>
   <style>
     a {
-      color: red;
+      /* 0001 */
+      color: red !important;
+      text-decoration: none;
+      font-style: italic;
     }
+    body a {
+      /* 0002 */
+      color: red !important;
+      text-decoration: none;
+      font-style: italic;
+    }
+    /* #myLink {
+      color: grey;
+    } */
+    .selected {
+      /* 0010 */
+      color: aliceblue;
+      background-color: red;
+    }
+
   </style>
 </head>
 <body>
-  <a href="">Lorem, ipsum.</a>
-  <a href="">Eius, eaque!</a>
-  <a href="">Provident, illo.</a>
-  <a href="">Totam, itaque?</a>
-  <a href="">Dolores, asperiores.</a>
-  <a href="">Aut, quidem.</a>
+  <a href="" class="selected" id="myLink">Provident, illo.</a>
 </body>
 </html>
