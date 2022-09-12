@@ -3,6 +3,7 @@ body {
   padding: 20px 0;
   line-height: 2;
   /* width:  1902px; */
+  min-width: 1000px;
 }
 .container {
   background: #fff;
@@ -21,4 +22,29 @@ body {
 .container header h1 {
   font-size: 42px;
   font-weight: bold;
+}
+.container header .original-link {
+  color: #dbdbdb;
+  /* 这里设置的下边距没有和container header 的下边距合并是因为header设置了边框 */
+  /* 当父子元素有相同外边距时，给父元素设置边框，可以将父子元素的填充盒隔开 */
+  margin-bottom: 26px;
+}
+.container header .original-link a {
+  text-decoration: underline;
+}
+.container header .original-link a:hover {
+  color: #fff;
+}
+.container section {
+  width: 90%;
+  margin: 0 auto;
+}
+.container section p {
+  margin: 1em 0;
+}
+.container section h2 {
+  font-size: 32px;
+  font-weight: bold;
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
 }
