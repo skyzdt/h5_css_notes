@@ -41,6 +41,8 @@ body {
 .main .container .choose-area .choose-item {
   margin: 1em 0;
   border-bottom: 1px dotted #e5e5e5;
+  line-height: 30px;
+  padding: 0 30px;
 }
 .main .container .choose-area .choose-item.noline {
   border: none;
@@ -51,8 +53,7 @@ body {
 }
 .main .container .choose-area .choose-item .right {
   float: left;
-  width: 1050px;
-  border: 2px solid #ccc;
+  width: 1010px;
 }
 .main .container .choose-area .choose-item .right li {
   float: left;
@@ -69,4 +70,74 @@ body {
   color: #fff;
   /* CSS3 圆角边框 */
   border-radius: 15px;
+}
+
+.main .container .movies .movie-item {
+  float: left;
+  width: 160px;
+  margin: 10px 32px 10px 0;
+}
+/* :nth-child(an+b) 这个 CSS 伪类首先找到所有当前元素的兄弟元素，
+  然后按照位置先后顺序从 1 开始排序，
+  选择的结果为 CSS 伪类:nth-child 括号中表达式（an+b）匹配到的元素集合（n=0，1，2，3...）。
+ */
+.main .container .movies .movie-item:nth-child(6n) {
+  margin-right: 0;
+}
+.main .container .movies .movie-item .poster {
+  width: 160px;
+}
+.main .container .movies .movie-item .poster a img {
+  width: 160px;
+  height: 220px;
+}
+
+.main .container .movies .movie-item .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 2px;
+  text-align: center;
+}
+
+.main .container .movies .movie-item .score {
+  color: #ffb400;
+  text-align: center;
+  line-height: 2.5;
+  font-style: italic;
+}
+
+.main .container .movies .movie-item .score::first-letter {
+  font-size: 1.5em;
+}
+
+.main .container .pagenation {
+  width: 100%;
+}
+
+.main .container .pagenation ul {
+  padding-left: 40px;
+  /* text-align: center; 可使行内内容（例如文字、行盒、行块盒）如何相对它的块父元素 水平居中 */
+  text-align: center;
+  margin: 16px 0;
+}
+
+.main .container .pagenation ul .page-item {
+  margin: 0 4px;
+  min-width: 20px;
+  text-align: center;
+  padding: 4px;
+  border: 1px dotted #d8d8d8;
+  display: inline-block;
+}
+
+.main .container .pagenation ul .page-item:hover {
+  color: #ef4238;
+  border-color: 1px solid #ef4238; 
+}
+
+.main .container .pagenation ul .page-item.selected {
+  color: #fff;
+  background-color: #ef4238;
+  border-color: 1px solid #ef4238;
 }
