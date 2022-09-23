@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 必须是a元素, 必须是第5个子元素 */
+    a:nth-child(5) {
+      color: red;
+    }
+    /* 必须是a元素, 必须是第偶数个子元素 */
+    a:nth-child(2n) {
+      color: skyblue;
+    }
+    /* 必须是a元素, 必须是第奇数个子元素 */
+    a:nth-child(2n+1) {
+      color: brown;
+    }
+    /* 选中第偶数个h6元素 */
+    h6:nth-of-type(even) {
+      color: skyblue;
+    }
+    /* 选中第偶数个h6元素 */
+    h6:nth-of-type(odd) {
+      color: #008c8c;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <!-- <p>开端</p> -->
+    <a href="">Lorem.</a>
+    <a href="">Quis?</a>
+    <a href="">Esse.</a>
+    <a href="">Veniam?</a>
+    <a href="">Placeat!</a>
+    <a href="">Possimus?</a>
+    <a href="">Quia!</a>
+    <a href="">Minima!</a>
+    <a href="">Tempore.</a>
+    <a href="">Rem.</a>
+    <h6>Lorem.</h6>
+    <h6>Nemo.</h6>
+  </nav>
+  <nav>
+    <p>p元素</p>
+    <h6>Lorem.</h6>
+    <h6>Nemo.</h6>
+    <h6>Reiciendis.</h6>
+    <p>p元素</p>
+    <h6>Porro?</h6>
+    <h6>Facilis!</h6>
+    <h6>Nihil!</h6>
+    <h6>Officiis!</h6>
+    <h6>Quia!</h6>
+    <h6>Voluptatum?</h6>
+    <p>p元素</p>
+    <h6>Suscipit.</h6>
+  </nav>
+</body>
+</html>

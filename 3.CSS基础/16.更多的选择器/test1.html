@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li:first-child {
+      color: red;
+    }
+    
+    /* 选中a元素, 并且a元素必须是第一个子元素 */
+    a:first-child {
+      color: skyblue;
+    }
+    /* 选中的是子元素中第一个a元素 */
+    a:first-of-type {
+      color: burlywood;
+    }
+    /* 必须是a元素, 必须是最后一个a元素 */
+    a:last-child {
+      color: green;
+    }
+    /* 选中子元素中最后一个a元素 */
+    a:last-of-type {
+      color: #008c8c;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>Lorem.</li>
+      <li>Dolorum.</li>
+      <li>Nam?</li>
+      <li>Distinctio!</li>
+      <li>Voluptatibus!</li>
+      <li>Repellendus!</li>
+      <li>Sunt.</li>
+      <li>Libero.</li>
+      <li>Amet.</li>
+      <li>Modi?</li>
+    </ul>
+    <nav>
+      <p>我来了</p>
+      <a href="">Lorem.</a>
+      <a href="">Voluptas!</a>
+      <a href="">Modi?</a>
+      <a href="">Nemo.</a>
+      <a href="">Eaque.</a>
+      <a href="">Omnis.</a>
+      <a href="">Odio.</a>
+      <a href="">Iusto!</a>
+      <a href="">Beatae.</a>
+      <a href="">Repellendus!</a>
+      <p>结束</p>
+    </nav>
+  </div>
+</body>
+</html>
