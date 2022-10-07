@@ -1,0 +1,15 @@
+div {
+  width: 1000px;
+  height: 600px;
+  /* background-size: contain; */
+  background-size: 400px 200px;
+  background-repeat: no-repeat;
+  border: 2px solid;
+  background-image: url('../assets/zhifou.jpeg');
+  /* background-position: center; */
+  background-position: center bottom;
+}
+body {
+  background-image: url('../assets/bilibili.PNG');
+  background-repeat: repeat;
+}
