@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- action不写的话 就是将包裹的表单信息提交到本地网页 -->
+  <form action="https://www.baidu.com" method="GET">
+    <p>
+      账号:
+      <input name="accout" type="text">
+    </p>
+    <p>
+      密码:
+      <input name="password" type="password">
+    </p>
+    <p>
+      城市:
+      <select name="city" id="">
+        <option value="1">成都</option>
+        <option value="2">西安</option>
+        <option value="3">重庆</option>
+      </select>
+    </p>
+    <!-- 点击提交后，跳转至https://www.baidu.com/?accout=abc&password=123&city=1网页 -->
+    <p>
+      <button type="submit">提交</button>
+    </p>
+  </form>
+</body>
+</html>
