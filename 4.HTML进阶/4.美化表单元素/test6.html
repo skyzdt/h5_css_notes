@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    .radio {
+      width: 12px;
+      height: 12px;
+      border: 1px solid #999;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .radio.checked {
+      border-color: #008c8c;
+    }
+    /* 使用伪元素选择器, 添加一个子元素 */
+    .radio.checked::after {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #008c8c;
+      border-radius: 50%;
+      margin: 3.5px 0 0 3.5px;
+    }
+  </style>
+<body>
+  <p>
+    checkbox多选框
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+  </p>
+  <p>
+    radio单选框
+    <input type="radio" name="radio1" id="">
+    <input type="radio" name="radio1" id="">
+    <input type="radio" name="radio1" id="">
+    <input type="radio" name="radio1" id="">
+    <input type="radio" name="radio1" id="">
+  </p>
+  <div class="radio checked"></div>
+</body>
+</html>

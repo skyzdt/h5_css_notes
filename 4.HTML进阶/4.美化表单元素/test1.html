@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      color: black;
+    }
+    input:focus {
+      outline: 1px solid #008c8c;
+      outline-offset: 0; /*0:贴在边框外, -1px 则刚好覆盖到原有边框*/
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <a tabindex="3" href="www.baidu.com">lorem</a>
+  </p>
+  <p>
+    <input tabindex="1" type="text">
+  </p>
+  <p>
+    <button tabindex="2">提交</button>
+  </p>
+</body>
+</html>

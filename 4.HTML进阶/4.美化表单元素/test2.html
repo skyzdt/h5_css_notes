@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 可替换元素部分样式由内容决定, 比如给单选框设置背景色无效 */
+    input:checked{
+      background-color: red;
+    }
+    /* 伪类选择器checked可以结合其他选择器, 控制其兄弟元素的样式 */
+    input:checked+label{
+      background-color: red;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <input type="radio" name="gender" id="radiomale">
+    <label for="radiomale">男</label>
+    <input type="radio" name="gender" id="radiofemale">
+    <label for="radiofemale">女</label>
+  </p>
+</body>
+</html>
