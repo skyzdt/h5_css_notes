@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* 小圆圈-外层 */
     .radio-item .radio {
       width: 12px;
       height: 12px;
@@ -15,6 +16,7 @@
       display: inline-block;
     }
     /* + 选中下一个兄弟元素 */
+    /* 小圆圈-外层被选中时替换边框颜色 */
     .radio-item input:checked+.radio {
       border-color: #008c8c;
     }
@@ -22,6 +24,7 @@
     .radio-item input:checked~span {
       color: #008c8c;
     }
+    /* 小圆圈被选中时-添加内层 */
     .radio-item input:checked+.radio::after {
       content: '';
       display: block;
