@@ -1,3 +1,8 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .form {
   width: 980px;
   margin: 1em auto;
@@ -6,4 +11,88 @@
 .form h2 {
   text-align: center;
   font-size: 38px;
+  border-bottom: 1px solid #ddd;
+  /* 设置大小为10px，令文字超出h2展示， 下边框穿过文字 */
+  height: 18px;
+  /* 为避免下面排列的元素与超出的文字重叠，造成样式紊乱， 需设置下边距 */
+  margin-bottom: 30px;
+}
+
+/* 文字添加背景色 盖住父元素的下边框， 实现一条线穿过文字的效果 */
+.form h2 span {
+  background-color: #FFF;
+  padding: 0 20px;
+}
+
+/* 表单区域 */
+.form-area {
+  width: 423px;
+  margin: 0 auto;
+}
+
+.form-area .form-item {
+  margin: 50px 0;
+}
+
+.form-area .form-item .select .select-item, .form-area .form-item .select .input{
+  float: left;
+  height: 40px;
+}
+.form-area .form-item .select .select-item {
+  width: 140px;
+  /* border-radius 其实是个速写属性： 左上、右上、右下、左下 */
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  border: 1px solid #dcdfe6;
+  border-right: none;
+  position: relative;
+  /* border-top-right-radius: 0; */
+}
+.form-area .form-item .select .select-item ul {
+  max-height: 256px;
+  background-color: #FFF;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  color: #606266;
+  padding: 10px 0;
+}
+.form-area .form-item .select .input input {
+  height: 40px;
+  border-radius: 0 4px 4px 0;
+}
+.form-area .form-item .select .input  {
+  width: 283px;
+}
+.form-area .form-item .select .select-item .title {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  color: #909399;
+}
+/* 统一的文本框样式 */
+input[type="text"], input[type="password"] {
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  height: 50px;
+  text-indent: 1em;
+  font-family: "PingFangSC-Medium";
+  font-size: 14px;
+  color: #606266;
+}
+input[type="text"]:hover, input[type="password"]:hover {
+  border-color: #c0c4cc;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #00a1d6;
+}
+/* 伪元素选择器placeholder 覆盖文本框原本的提示文字样式 */
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+  color: #ccc;
 }
