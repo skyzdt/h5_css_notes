@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 100%;
+      /* 边框的折叠方式 separate默认值,分隔的, collapse折叠的*/
+      border-collapse: collapse;
+    }
+    table caption {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 1em 0;
+    }
+    table th, table td {
+      border: 1px solid #999;
+      text-align: center;
+      padding: 20px 0;
+    }
+    thead tr {
+      background-color: #008c8c;
+      color: #FFF;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #fff;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #eee;
+    }
+    tbody tr:hover {
+      background-color: #ccc;
+    }
+    tbody tr td:nth-child(1) {
+      font-weight: bold;
+      color: chocolate;
+    }
+    tfoot tr td {
+      text-align: right;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>这是标题哦</caption>
+    <thead>
+      <!-- table row -->
+      <tr>
+        <th>列1</th>
+        <th>列2</th>
+        <th>列3</th>
+        <th>列4</th>
+        <th>列5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- 使用rowspan 控制单元格跨行数量 -->
+        <!-- <td rowspan="2">数据1</td> -->
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+      <tr>
+        <td>数据1</td>
+        <td>数据2</td>
+        <td>数据3</td>
+        <td>数据4</td>
+        <td>数据5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <!-- <td></td>
+        <td></td>
+        <td></td>
+        <td></td> -->
+        <!-- 使用colspan 控制单元格跨列数量 -->
+        <td colspan="5">合计: XXXX</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
